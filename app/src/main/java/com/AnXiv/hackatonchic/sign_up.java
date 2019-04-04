@@ -6,20 +6,19 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MainActivity extends AppCompatActivity {
+public class sign_up extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-
+        setContentView(R.layout.activity_sign_up);
 
     }
 
-    public void sign_up_activity(View view){
-        Intent intent = new Intent(this, sign_up.class);
+    public void profile_activity(View view){
+        Intent intent = new Intent(this, profile.class);
         Button button = (Button) findViewById(R.id.button);
-
         startActivity(intent);
+
     }
 }
